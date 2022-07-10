@@ -25,6 +25,18 @@
   },
   "engines": {
     "node": ">=14.x"
-  }
+  },
+  "description": "Pense en los usuarios como personas interesadas en la compra de flores para situaciones particulares como: cumpleaños, agradecimientos, fechas especiales entre otros. Teniendo en cuenta esto pensé en que la experiencia fuera limpia y fresca y con colores claros como los que se encuentran en la naturalez.",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tania1295/BOG005-card-validation.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/Tania1295/BOG005-card-validation/issues"
+  },
+  "homepage": "https://github.com/Tania1295/BOG005-card-validation#readme"
 }
-
