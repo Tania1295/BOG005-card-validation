@@ -1,3 +1,14 @@
+@font-face {
+    font-family:'Lato', sans-serif;
+    src: local(Lato);
+}
 h1{
+    font-family: 'Lato', sans-serif;
     color: #679975;
+}
+h2{
+    font-family: 'Lato', sans-serif;
+}
+footer{
+    font-family: 'Lato', sans-serif;
 }

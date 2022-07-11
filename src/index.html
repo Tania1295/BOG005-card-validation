@@ -4,17 +4,21 @@
     <meta charset="utf-8">
     <title>Tania Infante | Floristería</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
-      <h1>Tania</h1>
-      <h1>Infante Bonilla</h1>
+      <h1>Tania
+        <br>Infante Bonilla
+      </h1>
       <h2>Floristería</h2>
     </header>
     <main>
       <!--Formulario de datos-->
       <form>
-        <input type="number" id="numeroTc" placeholder="Número de la Tarjeta de Crédito" name="numeroTc" required/>
+        <input type="number" maxlength="16" id="numeroTc" placeholder="Número de la Tarjeta de Crédito" name="numeroTc" required/>
         <br>
         <input type="date" id="fechaExpiracionTc" placeholder="Fecha de Expiración Tarjeta de Crédito" name="fehcaExpiracionTc" required/>
         <br>

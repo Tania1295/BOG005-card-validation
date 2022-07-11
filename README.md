@@ -1,12 +1,14 @@
 # Tarjeta de crédito válida
 
+## ¿Quienes son los usuarios?
+
 Pense en los usuarios como personas interesadas en la compra de flores para situaciones particulares como: cumpleaños, agradecimientos, fechas especiales entre otros. Teniendo en cuenta esto pensé en que la experiencia fuera limpia y fresca y con colores claros como los que se encuentran en la naturalez.
 
 * Quiénes son los principales usuarios de producto: mujeres o hombres interesados en tener algún detalle especial con un ser querido o por requerimiento laboral.
-* Cuáles son los objetivos de estos usuarios en relación con tu producto: generar un momento con alguien especial.
-* Cómo crees que el producto que estás creando está resolviendo sus problemas: ya que se ofrece la solución para un determinada situación: cumpleaños, celebraciones, agradecimientos, 
+* Cuáles son los objetivos de estos usuarios en relación con tu producto: generar una experiencia para alguien especial.
+* Cómo crees que el producto que estás creando está resolviendo sus problemas: ya que se ofrece una experiencia para una determinada situación: cumpleaños, celebraciones, agradecimientos, grados, bautizos, picnic, funerales, etc.
 
-Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en tu proyecto. Piensa en eso al decidir tu estrategia de trabajo.
+Objetivos de aprendizaje
 
 ### HTML
 
