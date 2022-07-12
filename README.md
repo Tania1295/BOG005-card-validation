@@ -152,7 +152,7 @@ Objetivos de aprendizaje
 
 - [ ] **GitHub: Creación de cuenta y repos, configuración de llaves SSH**
 
-- [ ] **GitHub: Despliegue con GitHub Pages**
+- [X] **GitHub: Despliegue con GitHub Pages**
 
   <details><summary>Links</summary><p>
 
