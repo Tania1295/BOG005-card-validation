@@ -16,7 +16,7 @@
     <br>
       <!--Formulario de datos-->
       <form>
-        <input type="number" maxlength="16" id="numeroTc" placeholder="Número de la Tarjeta de Crédito" name="numeroTc" required/>
+        <input type="text" maxlength="16" id="numeroTc" placeholder="Número de la Tarjeta de Crédito" name="numeroTc" required/>
         <br>
         <input type="date" id="fechaExpiracionTc" placeholder="Fecha de Expiración Tarjeta de Crédito" name="fehcaExpiracionTc" required/>
         <br>
@@ -31,7 +31,8 @@
         <br>
         <input type="email" id="emailComprador" placeholder="Correo Electrónico" name="emailComprador" required/>
       </form>
-      <button type="submit" onclick="validarTc">Validar TC</button>
+      <input id="example-textbox"/>
+      <input type="button" value= "Validar" onclick="ValidateSomething();"/>
       <!--Fin del formulario-->
     </main>
     <br>
