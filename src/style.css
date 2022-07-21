@@ -19,3 +19,12 @@ h2{
 footer{
     font-family: 'Lato', sans-serif;
 }
+.formularioTc{
+    background: #fff;
+    width: 100%;
+    max-width: 700px;
+    padding: 80px 30px 30px 3px;
+    border-radius: 10px;
+    position: relative;
+    top: -150 px;
+}

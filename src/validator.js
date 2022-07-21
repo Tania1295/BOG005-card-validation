@@ -1,17 +1,35 @@
-const validator = {
-  // ...
-isValid: function ValidateSomething(){
-    // Check if your textbox is empty
-    if(document.getElementById('example-textbox').value.length == 0){
-         alert("Your textbox is empty. Please type something...");
-         document.getElementById('example-textbox').focus();
-         return false;
+const validator ={
+     isValid: function (creditCardNumber) {
+       var numberTc = new Array ();
+       var suma = 0;
+       var total;
+       var validate;
+       //Separar el array en elementos individuales
+       numberTc = creditCardNumber.split("");
+       numberTc.reverse();
+
+       for(var i =1; i< numberTc.length ; i += 2){
+        if(numberTc[i]<5){
+            numberTc[i] = numberTc [i] * 2;
+        }
+        else
+       {
+        numberTc[i]= ((numberTc[i]- 5)* 2) + 1;
+       }
     }
-    else{
-         // Everything is valid
-         alert('Your form is valid! (Do something)');
-         return true;
+    for (var j =0; j< numberTc.length; j++){
+        suma += Number(numberTc[j]);
+
+        total= suma % 10;
+
+        validate = total == 0;
+
+        return validate;
     }
+    },
+maskify: function(creditCardNumber){
+    var bloque = "#";
+    var hideTcNumber =(creditCardNumber.slice(0, -4).replace(/./g, bloque)+("" + creditCardNumber.slice(-4)));
 }
 };
 export default validator;
