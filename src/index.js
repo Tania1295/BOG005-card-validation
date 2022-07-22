@@ -1,18 +1,16 @@
 import validator from './validator.js';
-console.log("creditCardNumber");
-
-var btn = document.getElementById("validateTc");
+let btn = document.getElementById("validateTc");
 //var creditCardNumber = document.getElementById("numeroTc");
-var result;
+let result;
 
 btn.onclick = function almacenar(){
-    var creditCardNumber = document.getElementById("numeroTc").value;
+    let creditCardNumber = document.getElementById("numeroTc").value;
 //    creditCardNumber = creditCardNumber.value;
     validator.isValid(creditCardNumber);
     validator.maskify(creditCardNumber);
     if(validator.isValid(creditCardNumber) == true){
         result = "válida"
-        console.log("result");
+
     }else{
         result = "inválida"
     }
