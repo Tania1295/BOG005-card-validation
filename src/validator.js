@@ -1,38 +1,43 @@
+/* eslint-disable no-unused-vars */
 const validator = {
-  isValid: function (creditCardNumber) {
-    // let numberTcredito = document.getElementById("numeroTc").value
-    //Separar el array en elementos individuales
-    let arr = creditCardNumber.split("").reverse().join("");
+  isValid: (creditCardNumber) => {
+    let arr = creditCardNumber.split("").reverse(); //Separar el array en elementos individuales, revertirlo
     let suma = 0;
+    console.log('arr inicia', arr);
 
-    //Se reversa el array (cambia posiciones)
-    //arr.reverse();
+    //Función para realizar multiplicación posiciones pares
+    const numPositionPar = [];
+    for (let i = 0; i < arr.length; i++) {
+      const datos = parseInt(arr[i])
+      i % 2 != 0 ? numPositionPar.push(datos * 2) : numPositionPar.push(datos)
+    }
 
-    //Función para realizar multiplicación posiciones pares y suma para números mayores de 10, la const guardarNumeros almacena los datos ingresados
-    const guardarNumeros = [];
+    console.log('paso 1', numPositionPar)
 
-    for (let i = 1; i <= arr.length; i += 2) {
-      if (arr[i] < 5) {
-        guardarNumeros.push(arr[i] * 2);
-      } else {
-        guardarNumeros.push((arr[i] - 5) * 2 + 1);
+    // A las posiciones pares de numPositionPar que sean mayores a 9 restarle 9
+    for (let i = 0; i < numPositionPar.length; i = i + 2) {
+      if (numPositionPar[i] > 9) {
+        numPositionPar[i] = numPositionPar[i] - 9
       }
     }
-    //Función para verificar el resultado de la suma que sea producto igual a 0, v = valor obtenido en guardarNumeros
-    for (let v = 0; v < guardarNumeros.length; v++) {
-      suma += Number(guardarNumeros[v]);
-    }
+
+    console.log('paso 2', numPositionPar)
+
     if (suma % 10 === 0) {
       return true;
-    } else {
-      return false;
     }
   },
   //Función para ocultar los números de la TC
-  maskify: function (creditCardNumber) {
-    var bloque = "#";
-    var hideTcNumber = creditCardNumber.slice(0, -4).replace(/./g, bloque) +
-      ("" + creditCardNumber.slice(-4));
-  },
-};
-export default validator;
+  maskify: (creditCardNumber) => {
+if (creditCardNumber.length >4){
+  const numeros = creditCardNumber.split("")
+  for(let init = 0; init < numeros.length - 4; init++){
+numeros[init] = "#"
+  }
+  return numeros.join("")
+}else{
+  return creditCardNumber
+}
+},
+}
+export default validator
