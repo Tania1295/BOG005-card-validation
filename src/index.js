@@ -2,9 +2,16 @@ import validator from "./validator.js";
 
 //let expDate = document.getElementById("fechaExpiracionTc");
 //let cvv = document.getElementById("codigoVerificacion");
-let creditCardNumber = document.getElementById("numeroTc").value;
 let btn = document.getElementById("validateTc");
-let valido;
+let message;
+
+/* let numeroTc = document.getElementById("numeroTc").value;
+numeroTc.addEventListener("keyup", function(){
+
+var maskifyNumber = validator.maskify(this.value)
+document.getElementById("numeroTc").innerHTML = maskifyNumber
+}),
+ */
 
 btn.onclick = () => {
 /*     if (creditCardNumber.value == null || creditCardNumber.value == ' ') {
@@ -14,22 +21,12 @@ btn.onclick = () => {
     } else if (cvv.value == null || cvv.value == "") {
         alert("Ingresa el número de verificación");
     } else { */
-        validator.isValid(creditCardNumber);
-        //let verificacion = validator.maskify(creditCardNumber);
-        if (validator.isValid(creditCardNumber) == true) {
-            valido = "válida"
+        //validator.isValid(creditCardNumber);
+        const creditCardNumber = document.getElementById("numeroTc").value;
+        if (validator.isValid(creditCardNumber) === true) {
+            message = "válida"
         } else {
-            valido = "inválida"
+            message = "inválida"
         }
-        alert(`Su tarjeta ${creditCardNumber} es ${valido}`);
-        return false;
+        alert(`Su tarjeta ${creditCardNumber} es ${message}`);
     }
-//}
-
-const numeroTc = document.getElementById("numeroTc").value;
-creditCardNumber.addEventListener("keyup", function(event){
-const creditCardNumber = event.currentTarget.value;
-numeroTc.textContent = maskify(creditCardNumber)
-})
-
-

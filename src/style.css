@@ -16,9 +16,7 @@ h1{
 h2{
     font-family: 'Lato', sans-serif;
 }
-footer{
-    font-family: 'Lato', sans-serif;
-}
+
 .formularioTc{
     background: #fff;
     width: 100%;
@@ -27,4 +25,14 @@ footer{
     border-radius: 10px;
     position: relative;
     top: -150 px;
+}
+footer{
+    font-family: 'Lato', sans-serif;
+    background-color: #4d4d4d;
+    position: relative;
+    text-align: left;
+    padding: 1em 2em 3em 4em;
+}
+.footer-h3{
+    color: #fff;
 }
