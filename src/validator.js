@@ -9,28 +9,28 @@ function isValid(creditCardNumber) {
     return false;
   }
   let arr = creditCardNumber.split("").reverse(); //Separar el array en elementos individuales, revertirlo
-  let suma = 0;
+  let sum = 0;
   // console.log('arr inicial', arr);
 
   //Función para realizar multiplicación posiciones pares
-  const numPositionPar = [];
+  const positionNumber = [];
   for (let i = 0; i < arr.length; i++) {
-    const datos = parseInt(arr[i])
-    i % 2 != 0 ? numPositionPar.push(datos * 2) : numPositionPar.push(datos)
+    const newNumbers = parseInt(arr[i])
+    i % 2 != 0 ? positionNumber.push(newNumbers * 2) : positionNumber.push(newNumbers)
   }
-  //console.log('paso 1', numPositionPar)
+  //console.log('paso 1', positionNumber)
 
-  // A las posiciones pares de numPositionPar que sean mayores a 9 restarle 9
-  for (let i = 0; i < numPositionPar.length; i++) {
-    if (numPositionPar[i] > 9) {
-      numPositionPar[i] = numPositionPar[i] - 9
+  // A las posiciones pares de positionNumber que sean mayores a 9 restarle 9
+  for (let i = 0; i < positionNumber.length; i++) {
+    if (positionNumber[i] > 9) {
+      positionNumber[i] = positionNumber[i] - 9
     }
-    // console.log('paso 2', numPositionPar)
+    // console.log('paso 2', positionNumber)
 
-    suma += numPositionPar[i]
+    sum += positionNumber[i]
     //console.log("paso 3", suma)
   }
-  if (suma % 10 === 0) {
+  if (sum % 10 === 0) {
     return true;
   } else {
     return false
@@ -39,11 +39,11 @@ function isValid(creditCardNumber) {
 //Inicio de función enmascarar número Tarjeta de Crédito
 function maskify(creditCardNumber) {
   if (creditCardNumber.length > 4) {
-    const numeros = creditCardNumber.split("")
-    for (let init = 0; init < numeros.length - 4; init++) {
-      numeros[init] = "#"
+    const numbers = creditCardNumber.split("")
+    for (let init = 0; init < numbers.length - 4; init++) {
+      numbers[init] = "#"
     }
-    return numeros.join("")
+    return numbers.join("")
   } else {
     return creditCardNumber
   }

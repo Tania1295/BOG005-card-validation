@@ -2,27 +2,27 @@ import validator from "./validator.js";
 
 const btn = document.getElementById("validateTc");
 const name = document.getElementById("nameUser");
-const expDate = document.getElementById("fechaExpiracionTc");
-const cvv = document.getElementById("codigoVerificacion");
-const mail= document.getElementById("emailComprador");
+const expDate = document.getElementById("expirationDateTc");
+const cvv = document.getElementById("verificationCode");
+const mail= document.getElementById("emailBuyer");
+const creditCardNumber = document.getElementById("numTc").value;
 let message;
 let maskifyNumber = validator.maskify;
-const creditCardNumber = document.getElementById("numeroTc").value;
 
 btn.onclick = () => {
-    if (name.value !== null || name.value !== "") {
+    if (name !== null && name !== "") {
         alert("Ingresa el nombre del titular");
     } else if (creditCardNumber == null && creditCardNumber == "") {
         alert("Ingresa el número de Tarjeta de Crédito");
     } else if (expDate.value == null || expDate.value == "") {
-        alert("Ingresa fecha de expiración");
+        alert("Ingresa fecha de expiración de Tarjeta de Crédito");
     } else if (cvv.value == null || cvv.value == "") {
-        alert("Ingrese número de verificación");
+        alert("Ingrese número de verificación de Tarjeta de Crédito");
     }else if (mail.value == null || mail.value == "") {
         alert("Ingrese su correo electronico");
      }else {
         validator.isValid(creditCardNumber.value);
-        const creditCardNumber = document.getElementById("numeroTc").value;
+        const creditCardNumber = document.getElementById("numTc").value;
         if (validator.isValid(creditCardNumber) === true) {
             message = "válida"
         } else {
