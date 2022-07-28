@@ -10,7 +10,7 @@ let maskifyNumber = validator.maskify;
 const creditCardNumber = document.getElementById("numeroTc").value;
 
 btn.onclick = () => {
-    if (name !== null && name !== "") {
+    if (name.value !== null || name.value !== "") {
         alert("Ingresa el nombre del titular");
     } else if (creditCardNumber == null && creditCardNumber == "") {
         alert("Ingresa el número de Tarjeta de Crédito");
