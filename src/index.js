@@ -1,6 +1,6 @@
 import validator from "./validator.js";
 
-const btn = document.getElementById("validateTc");
+//const btn = document.getElementById("validateTc");
 const name = document.getElementById("nameUser");
 const expDate = document.getElementById("expirationDateTc");
 const cvv = document.getElementById("verificationCode");
@@ -9,7 +9,9 @@ const creditCardNumber = document.getElementById("numTc").value;
 let message;
 let maskifyNumber = validator.maskify;
 
-btn.onclick = () => {
+//btn.onclick = () => {
+    document.getElementById("formTc").addEventListener("submit", function(e){
+        e.preventDefault();
     if (name !== null && name !== "") {
         alert("Ingresa el nombre del titular");
     } else if (creditCardNumber == null && creditCardNumber == "") {
@@ -30,4 +32,4 @@ btn.onclick = () => {
         }
         alert("Su tarjeta" + maskifyNumber + creditCardNumber + "es " + message);
     }
-}
+})

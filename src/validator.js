@@ -10,7 +10,7 @@ function isValid(creditCardNumber) {
   }
   let arr = creditCardNumber.split("").reverse(); //Separar el array en elementos individuales, revertirlo
   let sum = 0;
-  // console.log('arr inicial', arr);
+  // console.log("arr inicial", arr);
 
   //Función para realizar multiplicación posiciones pares
   const positionNumber = [];
@@ -25,7 +25,7 @@ function isValid(creditCardNumber) {
     if (positionNumber[i] > 9) {
       positionNumber[i] = positionNumber[i] - 9
     }
-    // console.log('paso 2', positionNumber)
+    // console.log("paso 2", positionNumber)
 
     sum += positionNumber[i]
     //console.log("paso 3", suma)
