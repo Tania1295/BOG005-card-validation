@@ -12,13 +12,13 @@ document.getElementById("formTc").addEventListener("submit", function (e) {
     e.preventDefault();
     if (name.value == null || name.value == "") {
         //alert("Ingresa el nombre del titular");
-        Swal.fire("Ingresa", "el nombre del titular", "warning");
+        Swal.fire("Ingrese", "el nombre del titular", "warning");
     } else if (creditCardNumber.value == null || creditCardNumber.value == "") {
-       //alert("Ingresa el número de tarjeta de crédito");
-        Swal.fire("Ingresa", "el número de tarjeta de crédito", "warning");
+        //alert("Ingresa el número de tarjeta de crédito");
+        Swal.fire("Ingrese", "el número de tarjeta de crédito", "warning");
     } else if (expDate.value == null || expDate.value == "") {
         //alert("Ingresa fecha de expiración de tarjeta de crédito");
-        Swal.fire("Ingresa", "fecha de expiración de tarjeta de crédito", "warning");
+        Swal.fire("Ingrese", "fecha de expiración de tarjeta de crédito", "warning");
     } else if (cvv.value == null || cvv.value == "") {
         //alert("Ingrese número de verificación de tarjeta de crédito");
         Swal.fire("Ingrese", "número de verificación de tarjeta de crédito", "warning");
@@ -28,11 +28,20 @@ document.getElementById("formTc").addEventListener("submit", function (e) {
     } else {
         if (validator.isValid(creditCardNumber.value) === true) {
             message = "válida"
-            Swal.fire("Su tarjeta " + validator.maskify(creditCardNumber.value) + " es " + message, "success")
+            Swal.fire({
+                title: "Su tarjeta" + validator.maskify(creditCardNumber.value),
+                text: "es " + message,
+                icon: "success",
+                confirmButtonText: "Continuar"
+            })
         } else {
             message = "inválida"
-            Swal.fire("Su tarjeta " + validator.maskify(creditCardNumber.value) + " es " + message, "error")
+            Swal.fire({
+                title: "Su tarjeta" + validator.maskify(creditCardNumber.value),
+                text: "es " + message,
+                icon: "error",
+                confirmButtonText: "Regresar"
+            })
         }
-        //alert("Su tarjeta " + validator.maskify(creditCardNumber.value) + " es " + message);
     }
 })
