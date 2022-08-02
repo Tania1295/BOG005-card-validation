@@ -8,7 +8,8 @@ function isValid(creditCardNumber) {
   if (creditCardNumber === '') {
     return false;
   }
-  let arr = creditCardNumber.toString().split("").reverse(); //Separar el array en elementos individuales, revertirlo
+  //Separa el string en elementos individuales y revierte el mismo
+  let arr = creditCardNumber.toString().split("").reverse();
   let sum = 0;
   // console.log("arr inicial", arr);
 
@@ -26,11 +27,12 @@ function isValid(creditCardNumber) {
       positionNumber[i] = positionNumber[i] - 9
     }
     // console.log("paso 2", positionNumber)
-
+// Sum es igual a la suma de todos los nuevos números
     sum += positionNumber[i]
     //console.log("paso 3", suma)
   }
   //console.log(sum)
+  // Se realiza el residuo o modulo de la suma que sea igual a 0
   if (sum % 10 === 0) {
     return true;
   } else {

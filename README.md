@@ -12,6 +12,7 @@ Pense en los usuarios como personas interesadas en la compra de flores para situ
 * La imagen final de tu proyecto:
 
 * Imagen primer prototipo en papel:
+![Alt](/src/Img/Prototipo%20l%C3%A1piz.jpeg)
 
 * Feedback recibido indicando las mejoras a realizar:
 
