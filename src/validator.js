@@ -30,9 +30,11 @@ function isValid(creditCardNumber) {
     sum += positionNumber[i]
     //console.log("paso 3", suma)
   }
+  //console.log(sum)
   if (sum % 10 === 0) {
     return true;
   } else {
+    //console.log("Entre aquí")
     return false
   }
 }
