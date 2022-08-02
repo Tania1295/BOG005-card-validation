@@ -2,17 +2,33 @@
     font-family:'Lato', sans-serif;
     src: local(Lato);
 }
-header{
+
+.flex-container{
     display: flex;
+    flex-direction: column;
+    background-color: #679975;
+}
+
+.flex-container div{
+    width: auto;
+    margin: 10px;
+    text-align: center;
+    font-size: 1em;
+}
+
+.headerClass{
     align-items: center;
     justify-content: space-between;
     padding: 1rem;
     box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    font-size: 1em;
 }
+
 h1{
     font-family: 'Lato', sans-serif;
-    color: #679975;
+    color: #fff;
 }
+
 h2{
     font-family: 'Lato', sans-serif;
 }
@@ -21,11 +37,19 @@ h2{
     background: #fff;
     width: 100%;
     max-width: 700px;
-    padding: 80px 30px 30px 3px;
+    padding: 80px 30px 30px 6px;
     border-radius: 10px;
     position: relative;
     top: -150 px;
 }
+
+input {
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    padding: .5rem;
+    transition: all .25s ease;
+  }
+
 footer{
     font-family: 'Lato', sans-serif;
     background-color: #4d4d4d;
@@ -34,5 +58,9 @@ footer{
     padding: 1em 2em 3em 4em;
 }
 .footer-h3{
+    width: auto;
     color: #fff;
+    font-size: 15.2px;
+    letter-spacing: normal;
+    line-height: normal;
 }

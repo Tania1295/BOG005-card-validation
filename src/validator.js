@@ -8,7 +8,7 @@ function isValid(creditCardNumber) {
   if (creditCardNumber === '') {
     return false;
   }
-  let arr = creditCardNumber.split("").reverse(); //Separar el array en elementos individuales, revertirlo
+  let arr = creditCardNumber.toString().split("").reverse(); //Separar el array en elementos individuales, revertirlo
   let sum = 0;
   // console.log("arr inicial", arr);
 
