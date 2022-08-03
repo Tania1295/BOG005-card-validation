@@ -16,12 +16,13 @@ Pense en los usuarios como personas interesadas en la compra de flores para situ
 
 * Feedback recibido indicando las mejoras a realizar:
 
-* Imagen del prototipo final:
+* Imagen de test:
+![Alt](/src/Img/prueba_02082022.PNG)
 
 Objetivos de aprendizaje
 ### HTML
 
-- [ ] **Uso de HTML semántico**
+- [X] **Uso de HTML semántico**
 
   <details><summary>Links</summary><p>
 
@@ -31,7 +32,7 @@ Objetivos de aprendizaje
 
 ### CSS
 
-- [ ] **Uso de selectores de CSS**
+- [X] **Uso de selectores de CSS**
 
   <details><summary>Links</summary><p>
 
@@ -39,7 +40,7 @@ Objetivos de aprendizaje
   * [CSS Selectors - MDN](https://developer.mozilla.org/es/docs/Web/CSS/CSS_Selectors)
 </p></details>
 
-- [ ] **Modelo de caja (box model): borde, margen, padding**
+- [X] **Modelo de caja (box model): borde, margen, padding**
 
   <details><summary>Links</summary><p>
 
@@ -52,7 +53,7 @@ Objetivos de aprendizaje
 
 ### Web APIs
 
-- [ ] **Uso de selectores del DOM**
+- [X] **Uso de selectores del DOM**
 
   <details><summary>Links</summary><p>
 
@@ -61,7 +62,7 @@ Objetivos de aprendizaje
   * [Localizando elementos DOM usando selectores - MDN](https://developer.mozilla.org/es/docs/Web/API/Document_object_model/Locating_DOM_elements_using_selectors)
 </p></details>
 
-- [ ] **Manejo de eventos del DOM (listeners, propagación, delegación)**
+- [X] **Manejo de eventos del DOM (listeners, propagación, delegación)**
 
   <details><summary>Links</summary><p>
 
@@ -71,7 +72,7 @@ Objetivos de aprendizaje
   * [El objeto Event](https://developer.mozilla.org/es/docs/Web/API/Event)
 </p></details>
 
-- [ ] **Manipulación dinámica del DOM**
+- [X] **Manipulación dinámica del DOM**
 
   <details><summary>Links</summary><p>
 
@@ -85,14 +86,14 @@ Objetivos de aprendizaje
 
 ### JavaScript
 
-- [ ] **Tipos de datos primitivos**
+- [X] **Tipos de datos primitivos**
 
   <details><summary>Links</summary><p>
 
   * [Valores primitivos - MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Data_structures#valores_primitivos)
 </p></details>
 
-- [ ] **Strings (cadenas de caracteres)**
+- [X] **Strings (cadenas de caracteres)**
 
   <details><summary>Links</summary><p>
 
@@ -100,7 +101,7 @@ Objetivos de aprendizaje
   * [String — Cadena de caracteres - MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/String)
 </p></details>
 
-- [ ] **Variables (declaración, asignación, ámbito)**
+- [X] **Variables (declaración, asignación, ámbito)**
 
   <details><summary>Links</summary><p>
 
@@ -108,7 +109,7 @@ Objetivos de aprendizaje
   * [Variables](https://curriculum.laboratoria.la/es/topics/javascript/01-basics/02-variables)
 </p></details>
 
-- [ ] **Uso de condicionales (if-else, switch, operador ternario, lógica booleana)**
+- [X] **Uso de condicionales (if-else, switch, operador ternario, lógica booleana)**
 
   <details><summary>Links</summary><p>
 
@@ -116,7 +117,7 @@ Objetivos de aprendizaje
   * [Tomando decisiones en tu código — condicionales - MDN](https://developer.mozilla.org/es/docs/Learn/JavaScript/Building_blocks/conditionals)
 </p></details>
 
-- [ ] **Uso de bucles/ciclos (while, for, for..of)**
+- [X] **Uso de bucles/ciclos (while, for, for..of)**
 
   <details><summary>Links</summary><p>
 
@@ -124,7 +125,7 @@ Objetivos de aprendizaje
   * [Bucles e iteración - MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Loops_and_iteration)
 </p></details>
 
-- [ ] **Funciones (params, args, return)**
+- [X] **Funciones (params, args, return)**
 
   <details><summary>Links</summary><p>
 
@@ -134,14 +135,14 @@ Objetivos de aprendizaje
   * [Funciones — bloques de código reutilizables - MDN](https://developer.mozilla.org/es/docs/Learn/JavaScript/Building_blocks/Functions)
 </p></details>
 
-- [ ] **Pruebas unitarias (unit tests)**
+- [X] **Pruebas unitarias (unit tests)**
 
   <details><summary>Links</summary><p>
 
   * [Empezando con Jest - Documentación oficial](https://jestjs.io/docs/es-ES/getting-started)
 </p></details>
 
-- [ ] **Módulos de ECMAScript (ES Modules)**
+- [X] **Módulos de ECMAScript (ES Modules)**
 
   <details><summary>Links</summary><p>
 
@@ -149,9 +150,9 @@ Objetivos de aprendizaje
   * [export - MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Statements/export)
 </p></details>
 
-- [ ] **Uso de linter (ESLINT)**
+- [X] **Uso de linter (ESLINT)**
 
-- [ ] **Uso de identificadores descriptivos (Nomenclatura y Semántica)**
+- [X] **Uso de identificadores descriptivos (Nomenclatura y Semántica)**
 
 ### Control de Versiones (Git y GitHub)
 
@@ -176,17 +177,16 @@ Objetivos de aprendizaje
 
 - [ ] **Crear prototipos de alta fidelidad que incluyan interacciones**
 
-- [ ] **Seguir los principios básicos de diseño visual**
+- [X] **Seguir los principios básicos de diseño visual**
 
 ### Interfaz de usuario (UI)
 
 La interfaz debe permitir al usuario:
 
-* Insertar el número que queremos validar.
-* Ver el resultado si es válido o no.
-* Ocultar todos los dígitos de su número de tarjeta menos los últimos
-4 caracteres.
-* No debe poder ingresar un campo vacío.
+* Insertar el número que queremos validar. Si
+* Ver el resultado si es válido o no. Si
+* Ocultar todos los dígitos de su número de tarjeta menos los últimos 4 caracteres. Si
+* No debe poder ingresar un campo vacío.Si
 
 
 

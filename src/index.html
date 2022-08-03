@@ -9,53 +9,62 @@
   <script src="index.js" type="module"></script>
   <link rel="icon" type="image/png" href="/src/Img/icon_18091d7b3cfcb21debb637a6a3e4c3ed.ico">
   <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;900&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <div class="flex-container">
-    <div class="ad">
+      <div class="ad">
       <span class="adMain"> + 57 305 852 9698 </span>
       <span class="adDivider"></span>
-      <span class="adSchedule">Lunes a viernes 10 a 20h – Sábados 10 a 14h</span>
+      <span class="adSchedule">Lunes a viernes 8am a 8pm – Sábados 8am a 6pm</span>
     </div>
 
-    <div class="headerClass">
-      <header>
-        <h1>Floristería</h1>
-        <h1>Tania Infante Bonilla</h1>
-      </header>
-    </div>
+    <div class="headerClass"></div>
+
+  <div class="flex-container">
 
     <div class="bgFlower">
-
+      <img src="Img/Imag_1.webp" />
     </div>
 
-    <main>
+    <div class="productContainer">
+
+      <div>
+        <h3>Nombre</h3>
+        <img src="Img/hortensia_4.jpg" />
+        <h3>$89.000</h3>
+        <button>Agregar</button>
+      </div>
+
+      <div>
+        <h3>Nombre</h3>
+        <img src="Img/hortensia_.jpg" />
+        <h3>$79.000</h3>
+        <button>Agregar</button>
+      </div>
+
+    </div>
+    <br>
+    <!--Formulario de datos-->
+    <form id="formTc" class="formTc">
+      <input type="text" maxlength="30" id="nameUser" placeholder="Nombre del Titular" name="nameUser" />
       <br>
-      <!--Formulario de datos-->
-      <form id="formTc" class="formTc">
-        <input type="text" maxlength="30" id="nameUser" placeholder="Nombre del Titular" name="nameUser" />
-        <br>
-        <input type="text" maxlength="16" pattern="[0-9]+" id="numTc" placeholder="Número de la Tarjeta de Crédito"
-          name="numTc" />
-        <br>
-        <input type="month" id="expirationDateTc" placeholder="Fecha de Expiración Tarjeta de Crédito"
-          name="expirationDateTc" />
-        <br>
-        <input type="text" inputmode="numeric" maxlength="3" pattern="[0-9]+" id="verificationCode" placeholder="CVV"
-          name="verificationCode" />
-        <br>
-        <input type="email" id="emailBuyer" placeholder="Correo Electrónico" name="emailBuyer" />
-        <br>
-        <div class="btnValidateTc">
-          <button id="validateTc" class="btnValidate">Validar pago</button>
-        </div>
-      </form>
-      <!--Fin del formulario-->
-    </main>
+      <input type="text" maxlength="16" pattern="[0-9]+" id="numTc" placeholder="Número de la Tarjeta de Crédito"
+        name="numTc" />
+      <br>
+      <input type="month" id="expirationDateTc" placeholder="Fecha de Expiración Tarjeta de Crédito"
+        name="expirationDateTc" />
+      <br>
+      <input type="text" inputmode="numeric" maxlength="3" pattern="[0-9]+" id="verificationCode" placeholder="CVV"
+        name="verificationCode" />
+      <br>
+      <input type="email" id="emailBuyer" placeholder="Correo Electrónico" name="emailBuyer" />
+      <br>
+      <div class="btnValidateTc">
+        <button id="validateTc" class="btnValidate">Validar pago</button>
+      </div>
+    </form>
+    <!--Fin del formulario-->
     <br>
     <footer>
       <div>
