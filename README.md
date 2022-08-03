@@ -175,11 +175,11 @@ Objetivos de aprendizaje
 
 ### user-centricity
 
-- [ ] **Diseñar un producto o servicio poniendo a la usuaria en el centro**
+- [-] **Diseñar un producto o servicio poniendo a la usuaria en el centro**
 
 ### product-design
 
-- [ ] **Crear prototipos de alta fidelidad que incluyan interacciones**
+- [X] **Crear prototipos de alta fidelidad que incluyan interacciones**
 
 - [X] **Seguir los principios básicos de diseño visual**
 
