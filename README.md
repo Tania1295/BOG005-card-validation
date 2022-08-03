@@ -14,6 +14,10 @@ Pense en los usuarios como personas interesadas en la compra de flores para situ
 * Imagen primer prototipo en papel:
 ![Alt](/src/Img/Prototipo%20l%C3%A1piz.jpeg)
 
+* Imagen prototipo de alta fidelidad:
+![Alt](/src/Img/Inicio.png)
+![Alt](/src/Img/Inicio%20(2).png)
+
 * Feedback recibido indicando las mejoras a realizar:
 
 * Imagen de test:

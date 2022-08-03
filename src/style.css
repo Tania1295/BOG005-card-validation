@@ -1,15 +1,13 @@
 body {
-    margin: 0;
+    margin: 0px;
+    background-color: #fff;
+    font-family: 'Lato', sans-serif;
 }
 
 .flex-container {
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    background-color: #fff;
-    margin: 0;
-    padding: 0;
 }
 
 .ad {
@@ -20,58 +18,76 @@ body {
     padding: 0;
     border: 0;
     font-family: 'Lato', sans-serif;
+    font-size: 1.2em;
     vertical-align: baseline;
     text-align: center;
-}
-
-.adMain {
-    font-size: 1.2em;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-family: 'Lato', sans-serif;
-    vertical-align: baseline;
     box-sizing: border-box;
 }
 
 .adDivider {
     margin-left: 10px;
     padding-right: 10px;
-    width: 0;
     border-left: 1.5px solid #fff;
     height: 10%;
     vertical-align: baseline;
 }
 
-.adSchedule {
-    font-size: 1.2em;
-    text-align: center;
-    vertical-align: baseline;
-    box-sizing: border-box;
-}
-
 .headerClass {
     background-image: url("Img/LOG_TI.png");
-    background-color: #fff;
-    align-items: center;
     box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
     width: 100px;
     height: 140px;
-    object-fit: contain;
+    align-items: center;
     background-position-x: center;
     background-position-y: center;
     background-repeat: no-repeat;
-    position: relative;
-    overflow-y: hidden;
-    overflow-x: hidden;
     display: block;
     width: auto;
     margin: 10px;
    z-index: 1;
 }
 
+/* .bgFlower img{
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    width: 100px;
+    height: 100%;
+} */
+
+.buttonAdd {
+    padding: 5px 50px;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-size: 1em;
+    background-color: #679975;
+    border: 0;
+    border-radius: 0.5em;
+    box-shadow: 0px 4px 0px #95b89e;
+    transition-duration: 0.4s;
+    right: 15px;
+    bottom: 10px;
+    position: relative;
+}
+
+.buttonAdd:hover{
+    background-color: #95b89e;
+}
+
 .productContainer {
-    margin-left: 5px;
+    margin: 15px;
+    align-items: center;
+    padding: 2px 16px;
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+}
+
+.productContainer:hover{
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 .productContainer img {
@@ -101,7 +117,7 @@ body {
     border-radius: 10px;
     position: relative;
     top: -150 px;
-    margin: auto;
+    margin-bottom: 2em;
     box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.3);
 }
 
@@ -117,7 +133,7 @@ input {
 }
 
 footer {
-    font-family: 'Lato', sans-serif;
+    width: 100%;
     background-color: #4d4d4d;
     position: relative;
     text-align: left;
