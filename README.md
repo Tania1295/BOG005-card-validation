@@ -10,18 +10,22 @@ Pense en los usuarios como personas interesadas en la compra de flores para situ
 * Cómo crees que el producto que estás creando está resolviendo sus problemas: ya que se ofrece una experiencia para una determinada situación: cumpleaños, celebraciones, agradecimientos, grados, bautizos, picnic, funerales, etc.
 
 * La imagen final de tu proyecto:
+![Imagen final del prototipo](/src/Img/imagenfinal1.PNG)
 
 * Imagen primer prototipo en papel:
-![Alt](/src/Img/Prototipo%20l%C3%A1piz.jpeg)
+![Imagen primer prototipo en papel](/src/Img/Prototipo%20l%C3%A1piz.jpeg)
 
 * Imagen prototipo de alta fidelidad:
-![Alt](/src/Img/Inicio.png)
-![Alt](/src/Img/Inicio%20(2).png)
+![Imagne de Alta Fidelidad 1](/src/Img/Inicio.png)
+![Imagen de Alta Fidelidad 2](/src/Img/Inicio%20(2).png)
 
 * Feedback recibido indicando las mejoras a realizar:
+Mejorar el uso del HTML semantico.
+Usar ALT en la etiqueta IMG.
+Hacer uso de figma para modelos de alta fidelidad.
 
 * Imagen de test:
-![Alt](/src/Img/prueba_02082022.PNG)
+![Imagen de test](/src/Img/prueba_02082022.PNG)
 
 Objetivos de aprendizaje
 ### HTML
