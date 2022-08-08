@@ -5,9 +5,9 @@ const validator = {
 //Inicio función isValid
 function isValid(creditCardNumber) {
   //  debugger;
-  if (creditCardNumber === '') {
+/*   if (creditCardNumber === '') {
     return false;
-  }
+  } */
   //Separa el string en elementos individuales y revierte el mismo
   let arr = creditCardNumber.toString().split("").reverse();
   let sum = 0;
