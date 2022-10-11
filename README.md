@@ -189,12 +189,15 @@ Objetivos de aprendizaje
 
 ### Interfaz de usuario (UI)
 
-La interfaz debe permitir al usuario:
+La aplicación permite al usuario:
 
-* Insertar el número que queremos validar. Si
-* Ver el resultado si es válido o no. Si
-* Ocultar todos los dígitos de su número de tarjeta menos los últimos 4 caracteres. Si
-* No debe poder ingresar un campo vacío.Si
+* Insertar el número que queremos validar.
+* Ver el resultado si es válido o no.
+* Ocultar todos los dígitos de su número de tarjeta menos los últimos 4 caracteres.
+* No debe poder ingresar un campo vacío.
+
+Número de tarjeta de crédito válida: 79927398713
+Número de tarjeta de crédito inválida: 1234567890
 
 
 
